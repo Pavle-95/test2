@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+$gray: #303633;  /* rgb(48,54,51) */
+$lightGray: #f2f2f2;
+$green: #8bebcd; /* rgb(139, 232, 203)  */
+$pink: #9c7a97;  /* rgb(156, 122, 151) */
+$white: #fff;
+$headings: 'Source Sans Pro', sans-serif;
+$text: 'Lato', sans-serif;
+$transition: .3s ease;
+$font: 16px;
+
+
+/****************
+basic styles
+****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    background: white;
+    border: 2px solid $green;
+    border-radius: 10px;
+    padding: 10px 40px;
+    color: $green;
+    font-size: 1rem;
+    cursor: pointer;
+    &:hover{
+        background: $green;
+        color: $white;
+    }
+}
+
+// aSide
+.aSide{
+    background-image:linear-gradient(rgba(48,54,51,.8), rgba(156, 122, 151, .8)) ,url(./img/bg.jpg);
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px;
+    font-family: $headings;
+    img{
+        width: 35%;
+        border: 5px solid $pink;
+        border-radius: 50%;
+        margin: 30px 0;
+    }
+    h4{
+        color: white;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+    span{
+        font-style: italic;
+        color: $green;
+    }
+    div {
+        margin-top: 30px;
+        i{
+            font-size: 2rem;
+            color: $green;
+            padding-right: 20px;
+        }
+    }
+}
+
+// About
+.about{
+    left: 42%;
+    position: relative;
+    width: 55%;
+    color: $gray;
+    padding-bottom: 50px;
+    h2{
+        font-size: 3rem;
+        padding: 50px 0 20px 0;
+        font-family: $headings;
+        font-weight: 500;
+    }
+    hr{
+        width: 10%;
+        height: 2px;
+        color: $pink;
+    }
+    p{
+        padding: 20px 0;
+        font-family: $text;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}
+.portfolio{
+    left: 42%;
+    width: 55%;
+    position: relative;
+    h2{
+        font-size: 3rem;
+        padding: 50px 0 20px 0;
+        color: $gray;
+        font-family: $headings;
+        font-weight: 500;
+    }
+    hr{
+        width: 10%;
+        height: 2px;
+        color: $pink;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        article{
+            flex: 0 0 48%;
+            padding-bottom: 20px;
+            img{
+                width: 100%;
+            }
+            h4{
+                color: $pink;
+                font-size: 2rem;
+                font-family: $headings;
+                padding: 10px 0;
+            }
+            p{
+                padding: 5px;
+                font-family: $text;
+                color: $gray;
+            }
+        }
+    }
+}
+
+// Contact
+.contact{
+    left: 42%;
+    width: 55%;
+    position: relative;
+    margin-top: 50px;
+    h2{
+        font-size: 3rem;
+        padding: 50px 0 20px 0;
+        color: $gray;
+        font-family: $headings;
+        font-weight: 500;
+    }
+    hr{
+        width: 10%;
+        height: 2px;
+        color: $pink;
+    }
+    p{
+        padding: 20px 0;
+        font-family: $text;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        .prvi{
+            flex: 0 0 68%;
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                input{
+                    flex: 48%;
+                    padding: 5px;
+                    border-style: none;
+                    background: gainsboro;
+                    margin: 2px;
+                    &:last-child{
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        .drugi{
+            flex: 0 0 28%;
+            i{
+                color: $pink;
+                padding: 10px 5px;
+                span{
+                    color: $gray;
+                }
+            }
+            padding-bottom: 30px;
+        }
+    }
+    button{
+        background: $pink;
+        color: $white;
+        font-size: 1rem;
+        border: 2px solid $pink;
+        border-radius: 10px;
+        padding: 10px 40px;
+        cursor: pointer;
+        &:hover{
+            background: $white;
+            color: $pink;
+        }
+    }
+}
+
+
+

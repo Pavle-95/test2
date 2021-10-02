@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300;400;700&display=swap");
+/* rgb(48,54,51) */
+/* rgb(139, 232, 203)  */
+/* rgb(156, 122, 151) */
+/****************
+basic styles
+****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background: white;
+  border: 2px solid #8bebcd;
+  border-radius: 10px;
+  padding: 10px 40px;
+  color: #8bebcd;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.button:hover {
+  background: #8bebcd;
+  color: #fff;
+}
+
+.aSide {
+  background-image: linear-gradient(rgba(48, 54, 51, 0.8), rgba(156, 122, 151, 0.8)), url(./img/bg.jpg);
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.aSide img {
+  width: 35%;
+  border: 5px solid #9c7a97;
+  border-radius: 50%;
+  margin: 30px 0;
+}
+.aSide h4 {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.aSide span {
+  font-style: italic;
+  color: #8bebcd;
+}
+.aSide div {
+  margin-top: 30px;
+}
+.aSide div i {
+  font-size: 2rem;
+  color: #8bebcd;
+  padding-right: 20px;
+}
+
+.about {
+  left: 42%;
+  position: relative;
+  width: 55%;
+  color: #303633;
+  padding-bottom: 50px;
+}
+.about h2 {
+  font-size: 3rem;
+  padding: 50px 0 20px 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+}
+.about hr {
+  width: 10%;
+  height: 2px;
+  color: #9c7a97;
+}
+.about p {
+  padding: 20px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.portfolio {
+  left: 42%;
+  width: 55%;
+  position: relative;
+}
+.portfolio h2 {
+  font-size: 3rem;
+  padding: 50px 0 20px 0;
+  color: #303633;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+}
+.portfolio hr {
+  width: 10%;
+  height: 2px;
+  color: #9c7a97;
+}
+.portfolio div {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.portfolio div article {
+  flex: 0 0 48%;
+  padding-bottom: 20px;
+}
+.portfolio div article img {
+  width: 100%;
+}
+.portfolio div article h4 {
+  color: #9c7a97;
+  font-size: 2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 0;
+}
+.portfolio div article p {
+  padding: 5px;
+  font-family: "Lato", sans-serif;
+  color: #303633;
+}
+
+.contact {
+  left: 42%;
+  width: 55%;
+  position: relative;
+  margin-top: 50px;
+}
+.contact h2 {
+  font-size: 3rem;
+  padding: 50px 0 20px 0;
+  color: #303633;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 500;
+}
+.contact hr {
+  width: 10%;
+  height: 2px;
+  color: #9c7a97;
+}
+.contact p {
+  padding: 20px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.contact .row {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .row .prvi {
+  flex: 0 0 68%;
+}
+.contact .row .prvi form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .row .prvi form input {
+  flex: 48%;
+  padding: 5px;
+  border-style: none;
+  background: gainsboro;
+  margin: 2px;
+}
+.contact .row .prvi form input:last-child {
+  height: 100px;
+}
+.contact .row .drugi {
+  flex: 0 0 28%;
+  padding-bottom: 30px;
+}
+.contact .row .drugi i {
+  color: #9c7a97;
+  padding: 10px 5px;
+}
+.contact .row .drugi i span {
+  color: #303633;
+}
+.contact button {
+  background: #9c7a97;
+  color: #fff;
+  font-size: 1rem;
+  border: 2px solid #9c7a97;
+  border-radius: 10px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: #fff;
+  color: #9c7a97;
+}
+
+/*# sourceMappingURL=style.css.map */
